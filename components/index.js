@@ -1,0 +1,6 @@
+export { default as Navbar } from './navbar'
+export { default as News } from './news'
+export { default as Technologies } from './technologies'
+export { default as Facility } from './facility'
+export { default as Publications } from './publications'
+export { default as Bioe } from './bioe'

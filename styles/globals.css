@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+.box:before {     
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:0;
+  height: 6px;
+  width: 20%;
+  
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+}
+}
+@layer utilities{
+  .message-card:after {
+  content: "";
+  position: absolute;
+  left: 40px;
+  bottom: -20px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #FFFFFF;
+  opacity: 0.2;
+
+}
+}
+
+@font-face {
+  font-family: 'Rotbold';
+  src: url('/Fonts/RotisSansSerifStd-Bold.otf');
+}
+@font-face {
+  font-family: 'Rotextra';
+  src: url('/Fonts/RotisSansSerifStd-ExtraBold.otf');
+}
+@font-face {
+  font-family: 'Rotitalic';
+  src: url('/Fonts/RotisSansSerifStd-Italic.otf');
+}
+@font-face {
+  font-family: 'Rotlight';
+  src: url('/Fonts/RotisSansSerifStd-Light.otf');
+}
+@font-face {
+  font-family: 'Rotlightit';
+  src: url('/Fonts/RotisSansSerifStd-LightIt.otf');
+}
+@font-face {
+  font-family: 'Rot';
+  src: url('/Fonts/RotisSansSerifStd.otf');
+}
