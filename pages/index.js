@@ -20,8 +20,8 @@ export default function Home() {
           className='object-cover h-[550] w-full'
           />
           <div className='absolute 2xl:bottom-24 bottom-6 2xl:right-10 right-8 text-white p-2 uppercase'>
-          <p className=' 2xl:text-6xl text-xl font-rotlight'>innovation today for a</p>
-          <p className=' 2xl:text-8xl text-3xl font-rotextrabold'>better tomorrow</p>
+          <p className=' lg:text-6xl text-xl font-rotlight'>innovation today for a</p>
+          <p className=' lg:text-8xl text-3xl font-rotextrabold'>better tomorrow</p>
           </div>
         </div>
         

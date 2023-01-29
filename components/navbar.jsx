@@ -48,7 +48,7 @@ const Navbar = () => {
 
   return (
     <div className='font-rotbold'>
-      <div className='bg-teal-600 text-white pl-3 pr-20 2xl:px-16 py-2 flex justify-between text-xl relative'>
+      <div className='bg-teal-600 text-white pl-3 pr-20 xl:px-16 py-2 flex justify-between text-xl relative'>
 
         <ul className='flex items-center gap-2'>
           <li>
@@ -65,15 +65,15 @@ const Navbar = () => {
           })}
         </ul>
 
-        <div className='2xl:pr-36 pr-2'>
-          <button className='bg-white bg-opacity-20 px-4 2xl:px-8 absolute min-h-full top-0'>
+        <div className='lg:pr-36 pr-2'>
+          <button className='bg-white bg-opacity-20 px-4 lg:px-8 absolute min-h-full top-0'>
             عربي
           </button>
         </div>
 
       </div>
 
-      <div className=' flex justify-between pl-4 2xl:pl-16 py-2 pr-6 text-teal-600'>
+      <div className=' flex justify-between pl-4 lg:pl-16 py-2 pr-6 text-teal-600'>
 
         <div>
           <Image alt='logo' 
@@ -82,7 +82,7 @@ const Navbar = () => {
           height={150} />
         </div>
 
-        <ul className='hidden 2xl:flex 2xl:text-xl items-center 2xl:gap-5 gap-2'>
+        <ul className='hidden lg:flex lg:text-xl items-center lg:gap-5 gap-2'>
           <li className='text-yellow-400'>HOME</li>
           {navLinks.map((item, idx) => {
             return (
@@ -98,10 +98,10 @@ const Navbar = () => {
           </button>
         </ul>
 
-        <div className='mt-5 2xl:hidden' onClick={() => setToggle(!toggle)}>
+        <div className='mt-5 lg:hidden' onClick={() => setToggle(!toggle)}>
           {(toggle) ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
         </div>
-        <ul className={toggle ? '2xl:hidden text-white fixed bg-teal-600 text-lg overflow-hidden min-h-screen w-[50%] pt-6 pl-2 left-0 top-0 ease-in-out duration-500' : 'ease-in-out duration-500 fixed left-[-100%]'}>
+        <ul className={toggle ? 'lg:hidden text-white fixed bg-teal-600 text-lg overflow-hidden min-h-screen w-[50%] pt-6 pl-2 left-0 top-0 ease-in-out duration-500' : 'ease-in-out duration-500 fixed left-[-100%]'}>
           <li className='text-yellow-400 p-4 border-b border-white'>HOME</li>
           {navLinks.map((item, idx) => {
             return (
